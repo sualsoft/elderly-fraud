@@ -42,14 +42,6 @@
 
     <!-- Template Main CSS File -->
     <link href="/assets/css/main.css" rel="stylesheet" />
-
-    <!-- =======================================================
-  * Template Name: Logis
-  * Updated: Mar 10 2023 with Bootstrap v5.2.3
-  * Template URL: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
   </head>
 
   <body>
@@ -69,23 +61,6 @@
               {{ with .button}}
               <a href="{{.link}}">{{.label}}</a>
               {{end}}
-            </div>
-
-            <div class="row gy-4" data-aos="fade-up" data-aos-delay="400">
-              {{range .count}}
-              <div class="col-lg-3 col-6">
-                <div class="stats-item text-center w-100 h-100">
-                  <span
-                    data-purecounter-start="0"
-                    data-purecounter-end="{{.number}}"
-                    data-purecounter-duration="1"
-                    class="purecounter"
-                  ></span>
-                  <p>{{.title}}</p>
-                </div>
-              </div>
-              {{end}}
-              <!-- End Stats Item -->
             </div>
           </div>
         </div>
@@ -113,7 +88,11 @@
                 <h4 class="title">{{.title}}</h4>
                 <p class="description">{{.content}}</p>
                 {{with .button}}
-                <a href="{{.link}}" class="readmore stretched-link"
+                <a
+                  href="{{.link}}"
+                  class="readmore stretched-link"
+                  role="button"
+                  data-bs-toggle="modal"
                   ><span>{{.label}}</span> <i class="{{.icon}}"></i
                 ></a>
                 {{end}}
@@ -136,7 +115,13 @@
               <h3>{{.title}}</h3>
               <p>{{.content}}</p>
               {{with .button}}
-              <a class="cta-btn" href="{{.link}}">{{.label}}</a>
+              <a
+                class="cta-btn"
+                data-bs-toggle="modal"
+                href="{{.link}}"
+                role="button"
+                >{{.label}}</a
+              >
               {{end}}
             </div>
           </div>
@@ -209,6 +194,110 @@
       </div>
     </footer>
     <!-- End Footer -->
+
+    <!--Toggle 1-->
+    <div
+      class="modal fade"
+      id="exampleModalToggle"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalToggleLabel">
+              Add your details
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputname" class="form-label"
+                  >Your full name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputname"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="contact" class="form-label">Contact Number</label>
+                <input type="text" class="form-control" id="contact" />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Check me out</label
+                >
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="exampleModalToggle2"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel2"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Hide this modal and show the first with the button below.
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-primary"
+              data-bs-target="#exampleModalToggle"
+              data-bs-toggle="modal"
+              data-bs-dismiss="modal"
+            >
+              Back to first
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- End Footer -->
 
     <a

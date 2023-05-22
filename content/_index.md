@@ -39,7 +39,7 @@ featured:
         through its largest program.
       button:
         label: Get more details
-        link: /contact
+        link: "#exampleModalToggle"
         icon: bi bi-arrow-right
 
     - title: Health & Wellness
@@ -58,7 +58,7 @@ call_to_action:
   content: Complete the form, and we'll reach out to provide information, address your inquiries, and connect you with a nearby Sunrise community.
   button:
     label: PRICING & AVAILABILITY
-    link: #
+    link: "#exampleModalToggle"
 
 ################### FAQs ############################
 
