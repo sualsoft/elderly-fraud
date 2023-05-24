@@ -217,7 +217,7 @@
             ></button>
           </div>
           <div class="modal-body">
-            <form>
+            <form action="https://formspree.io/f/xwkjjlky" method="POST">
               <div class="mb-3">
                 <label for="exampleInputname" class="form-label"
                   >Your full name</label
@@ -226,7 +226,9 @@
                   type="text"
                   class="form-control"
                   id="exampleInputname"
+                  name="name"
                   aria-describedby="emailHelp"
+                  required
                 />
               </div>
               <div class="mb-3">
@@ -237,7 +239,9 @@
                   type="email"
                   class="form-control"
                   id="exampleInputEmail1"
+                  name="email"
                   aria-describedby="emailHelp"
+                  required
                 />
                 <div id="emailHelp" class="form-text">
                   We'll never share your email with anyone else.
@@ -245,18 +249,15 @@
               </div>
               <div class="mb-3">
                 <label for="contact" class="form-label">Contact Number</label>
-                <input type="text" class="form-control" id="contact" />
-              </div>
-              <div class="mb-3 form-check">
                 <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="exampleCheck1"
+                  type="text"
+                  class="form-control"
+                  id="contact"
+                  name="contact"
+                  required
                 />
-                <label class="form-check-label" for="exampleCheck1"
-                  >Check me out</label
-                >
               </div>
+
               <button type="submit" class="btn btn-primary">Submit</button>
             </form>
           </div>
