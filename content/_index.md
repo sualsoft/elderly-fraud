@@ -1,15 +1,16 @@
 ---
 layout: home
 top:
-  tp:
-    text: " Call us: 4707247330 "
-    link: tel:4707247330
+  phone:
+    text: "4707247330 "
+    link: 4707247330
     icon: bi bi-telephone
 
   twitter:
     link: https://twitter.com/actconvenient
     icon: bi bi-twitter
-    text: follow us
+    text: TWEET
+
 hero_section:
   title: "WELCOME TO THE RAISE ELDERY ORGANIZATION"
   content: "Eldery Fraud is a comprehensive online resource dedicated to protecting older adults from the scourge of fraud.With a focus on education, awareness, and community support, Eldery Fraud equips seniors with the knowledge and resources necessary to safeguard their financial well-being and live with peace of mind."

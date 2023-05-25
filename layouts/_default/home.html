@@ -51,18 +51,19 @@
         <div class="row">
           <div class="col-md-6">
             <ul>
-              {{with .tp}}
+              {{with .phone}}
               <li>
-                <a href="{{.link}}"><i class="{{.icon}}"></i> {{.text}} </a> |
+                <a href="tel:{{.link}}"><i class="{{.icon}}"></i> {{.text}} </a>
+                |
               </li>
               {{end}}
               <!---->
               <li>
                 {{with .twitter}}
-                <a href="{{.link}}"><i class="{{.icon}}"></i> {{.text}}</a> |
+                <a href="{{.link}}"><i class="{{.icon}}"></i> {{.text}} </a> |
                 {{end}}
               </li>
-              <li><a href="https://www.raisee.org/">raisee.org</a></li>
+              <li><a href="https://www.raisee.org/">RAISEE.Org</a></li>
             </ul>
           </div>
         </div>
