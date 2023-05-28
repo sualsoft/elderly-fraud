@@ -17,7 +17,7 @@ hero_section:
   image: /assets/img/logo.png
   button:
     label: You are not alone. Let us help you!
-    link: tel:4707247330
+    link: 4707247330
   count:
     - title: ELDERS
       number: 1000
