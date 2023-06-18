@@ -41,7 +41,7 @@ featured:
         for seniors in their communities.
       button:
         label: Call us
-        link: tel:4707247330
+        link: "tel:4707247330"
         icon: bi bi-telephone-fill
 
     - title: Affordable Housing
@@ -52,6 +52,7 @@ featured:
         label: Get more details
         link: "#exampleModalToggle"
         icon: bi bi-arrow-right
+        modal: true
 
     - title: Health & Wellness
       icon: bi bi-lungs

@@ -100,7 +100,7 @@
       <section id="featured-services" class="featured-services">
         <div class="container">
           <div class="row gy-4">
-            {{range.cards}}
+            {{range .cards}}
             <div
               class="col-lg-4 col-md-6 service-item d-flex"
               data-aos="fade-up"
@@ -114,12 +114,17 @@
                 <p class="description">{{.content}}</p>
                 {{with .button}}
                 <a
-                  href="{{.link}}"
-                  class="readmore stretched-link"
+                  href="{{ .link | safeURL}}"
+                  class="readmore"
+                  {{if
+                  .modal}}
                   role="button"
                   data-bs-toggle="modal"
-                  ><span>{{.label}}</span> <i class="{{.icon}}"></i
-                ></a>
+                  {{end}}
+                >
+                  <span>{{.label}}</span>
+                  <i class="{{.icon}}"></i>
+                </a>
                 {{end}}
               </div>
             </div>
@@ -129,6 +134,7 @@
         </div>
       </section>
       {{end}}
+
       <!-- End Featured Services Section -->
 
       <!-- ======= Call To Action Section ======= -->
